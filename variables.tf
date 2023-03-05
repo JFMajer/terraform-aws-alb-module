@@ -23,3 +23,9 @@ variable "certificate_arn" {
     description = "The ARN of the certificate to use for HTTPS"
     type = string
 }
+
+variable "server_port" {
+    description = "The port the web server will listen on"
+    type = number
+    default = 80
+}
